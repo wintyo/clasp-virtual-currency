@@ -1,0 +1,23 @@
+{
+  "name": "clasp-virtual-currency",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clasp": "clasp",
+    "open": "clasp open",
+    "push": "clasp push",
+    "exec": "clasp run main",
+    "logs": "clasp logs",
+    "format": "prettier --write ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@google/clasp": "^2.4.1",
+    "@types/google-apps-script": "^1.0.41",
+    "prettier": "^2.5.1"
+  },
+  "author": "wintyo <wintyo1024@gmail.com>",
+  "license": "MIT"
+}

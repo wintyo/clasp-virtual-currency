@@ -1,0 +1,11 @@
+{
+  "installed": {
+    "client_id": "886993430561-7g9eg4q9tl82o1kl0k663a3p5vbt7dtt.apps.googleusercontent.com",
+    "project_id": "gas-virtual-currency",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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",
+    "redirect_uris": ["urn:ietf:wg:oauth:2.0:oob", "http://localhost"]
+  }
+}
