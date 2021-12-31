@@ -16,6 +16,6 @@ function request() {
 }
 
 function bitflyer() {
-  const data = BitFlyerAPI.fetchCurrency();
+  const data = BitFlyerAPI.fetchTransactions();
   console.log(data);
 }
