@@ -8,6 +8,14 @@
 1. [このページ](https://console.cloud.google.com/apis/credentials?project=gas-virtual-currency)からデスクトップクライアントの認証ファイルをダウンロードし、`./creds.json`に配置する。
 1. `npm run clasp login --creds creds.json`でログイン認証ページに飛び、認証する。認証できれば、`./.clasprc.json`にファイルが生成される
 
+## 環境変数(スクリプトプロパティ)の設定
+
+API KEY などコードに埋め込みたくない変数を設定するには GAS ではスクリプトプロパティがあるが、これが GUI では設定できなくなった。そのためコード上に書く必要があるが、極力そのコードが残らないようにするため.env 的な運用にする。
+
+1. `src/env.sample.ts`にテンプレートファイルがあるため、それを`src/env.ts`にコピーし必要な情報を入力する
+2. `npm run push`で GAS にアップロードする
+3. GAS エディタ上の`Config.gs`で`setProperties`を実行する。実行後`getProperties`で設定内容を確認することができ、入っていたら正しく動いている
+
 ## 参考記事
 
 ### clasp

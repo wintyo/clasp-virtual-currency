@@ -4,3 +4,4 @@ yarn.lock
 
 .creds.json
 .clasprc.json
+src/env.ts
