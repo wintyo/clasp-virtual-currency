@@ -35,4 +35,27 @@ export module CoinCheckAPI {
     });
     return rest;
   }
+
+  /**
+   * 取引所での取引情報を取得する
+   */
+  export function fetchTransactions() {
+    const url =
+      'https://coincheck.com/api/exchange/orders/transactions_pagination';
+    const timestamp = Date.now().toString();
+
+    const response = UrlFetchApp.fetch(url, {
+      method: 'get',
+      headers: {
+        'ACCESS-KEY': COIN_CHECK_ACCESS_KEY,
+        'ACCESS-NONCE': timestamp,
+        'ACCESS-SIGNATURE': Utils.makeSignature(
+          timestamp + url,
+          COIN_CHECK_SECRET_KEY
+        ),
+      },
+    });
+    const json = JSON.parse(response.getContentText());
+    return json;
+  }
 }

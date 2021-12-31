@@ -9,7 +9,7 @@ function main() {
 }
 
 function request() {
-  const data = CoinCheckAPI.fetchCurrency();
+  const data = CoinCheckAPI.fetchTransactions();
 
   console.log(data);
 }
