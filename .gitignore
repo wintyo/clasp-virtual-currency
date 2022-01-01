@@ -2,6 +2,6 @@ node_modules/
 npm-debug.log
 yarn.lock
 
-.creds.json
+creds.json
 .clasprc.json
 src/env.ts
