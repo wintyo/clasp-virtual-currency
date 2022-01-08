@@ -6,7 +6,9 @@
 ## 認証情報の設定
 
 1. [このページ](https://console.cloud.google.com/apis/credentials?project=gas-virtual-currency)からデスクトップクライアントの認証ファイルをダウンロードし、`./creds.json`に配置する。
-1. `npm run clasp login --creds creds.json`でログイン認証ページに飛び、認証する。認証できれば、`./.clasprc.json`にファイルが生成される
+1. `npm run login`でログイン認証ページに飛び、認証する。認証できれば、`./.clasprc.json`にファイルが生成される
+
+※改めて触った感じ他のコマンドは結局`~/.clasprc.json`を見ているため、グローバルログインで事足りそう
 
 ## 環境変数(スクリプトプロパティ)の設定
 

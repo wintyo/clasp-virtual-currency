@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "clasp": "clasp",
+    "login": "clasp login --creds ./creds.json",
     "open": "clasp open",
     "push": "clasp push",
     "exec": "clasp run main",
